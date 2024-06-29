@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="inum1" id="inum1"> + 
+    <input type="number" name="inum2" id="inum2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="result">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('inum1');
+            var tn2 = window.document.getElementById('inum2');
+            var resultado = window.document.getElementById('result');
+
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            var soma = n1 + n2;
+
+            resultado.innerHTML = soma;
+        }
+
+    </script>
+</body>
+</html>
