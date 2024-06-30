@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificação países</h1>
+    Qual país você é?: <input type="text" name="itext" id="itext">
+    <input type="button" value="enviar" onclick="verifica()">
+    <div id="pais-usuario"></div>
+    <div id="res"></div>
+
+    <script>
+        function verifica(){
+            var pais_usuario = window.document.getElementById('itext').value;
+            var resposta = window.document.getElementById('res');
+            var pais_provisorio = window.document.getElementById('pais-usuario');
+
+            pais_provisorio.innerHTML = `País ${pais_usuario}`;
+
+            if(pais_usuario == 'Brasil') {
+                resposta.innerHTML = `VAI CURINTHIA?`;
+            }else{
+                resposta.innerHTML = 'Supports the biggest team in the world, Corinthians';
+            }
+            }
+        
+    </script>
+</body>
+</html>
